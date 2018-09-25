@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        android:key="silent_breaker_switch"
+        android:summary="turn on or off"
+        android:title="Silent Breaker Mode" />
+    <PreferenceCategory android:title="Basic Settings">
+        <EditTextPreference
+            android:defaultValue="3"
+            android:inputType="number"
+            android:key="number_of_calls"
+            android:layout="@layout/my_preferences_layout"
+            android:summary="silent mode will be breaked after this number of calls"
+            android:title="Number of calls" />
+        <EditTextPreference
+            android:defaultValue="10"
+            android:inputType="number"
+            android:key="interval_between_calls"
+            android:layout="@layout/my_preferences_layout"
+            android:summary="time interval between the calls"
+            android:title="Time interval" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Advanced Settings">
+        <EditTextPreference
+            android:inputType="number"
+            android:key="special_number"
+            android:layout="@layout/my_preferences_layout"
+            android:summary="silent mode will always be disabled for this number"
+            android:title="Special number" />
+    </PreferenceCategory>
+</PreferenceScreen>

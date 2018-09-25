@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreferenceCompat
+        android:key="due_calls_switch"
+        android:title="Due Calls Mode"
+        android:summary="turn on or off" />
+    <PreferenceCategory
+        android:title="Basic Settings">
+        <EditTextPreference
+            android:key="due_calls_interval"
+            android:title="Interval"
+            android:summary="set the interval between notifications"
+            android:defaultValue="5"
+            android:layout="@layout/my_preferences_layout"/>
+    </PreferenceCategory>
+</PreferenceScreen>
